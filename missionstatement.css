@@ -1,6 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f9f9f9;
+    color: black;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -11,8 +12,6 @@ body {
     background-color: white;
     padding: 40px;
     max-width: 800px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -50,4 +49,23 @@ body {
 
 .logo img {
     width: 150px;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark .everything {
+    background-color: #444;
+    color: white;
+}
+
+body.dark .subtitle {
+    color: #A9D1E7; 
+}
+
+body.dark .logo img {
+    content: url('byui-logo_white.png');
 }
