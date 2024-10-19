@@ -1,0 +1,74 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #EFC69B; /* Gold */
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns for nav links */
+    list-style: none;
+    border-top: 1px solid #473144; /* Dark border */
+    border-bottom: 1px solid #473144;
+    justify-items: end; /* Align items to the right */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #AF1B3F; /* Red */
+    font-weight: bold;
+}
+
+/* Layout for main content */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: larger for reviews, smaller for filters */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Book Review section */
+.review {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Details on the left, book info on the right */
+    gap: 10px;
+    border-bottom: 1px solid #473144;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.details {
+    color: #473144; /* Dark color */
+}
+
+.filters {
+    border: 1px solid #473144;
+    padding: 10px;
+}
+
+/* Skip to Content link (for accessibility) */
+.skiptocontent {
+    position: absolute;
+    top: -40px;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
