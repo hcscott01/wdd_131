@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 22px;
+  }
+  .testbox {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  form {
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 8px #006622;
+  }
+  fieldset {
+    margin-bottom: 2em;
+  }
+  input, select, textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+  }
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 1em;
+  }
+  .item {
+    position: relative;
+    margin: 10px 0;
+  }
+  .item span {
+    color: red;
+  }
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .columns div {
+    width: 48%;
+  }
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+  }
+  button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #006622;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #00b33c;
+  }
+  .hide {
+    display: none;
+  }
+  @media (max-width: 568px) {
+    .columns div {
+      width: 100%;
+    }
+  }
+  
