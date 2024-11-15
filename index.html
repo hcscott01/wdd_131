@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A collection of delicious and easy-to-make recipes.">
-  <meta property="og:title" content="Recipe Book">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="A collection of delicious and easy-to-make recipes.">
-  <meta property="og:image" content="images/recipe-book.png">
-  <meta property="og:url" content="https://yourgithubusername.github.io/recipes/">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Recipe Book</title>
-  <link rel="stylesheet" href="recipes.css">
-  <link rel="icon" href="images/favicon.ico">
-  <script type="module" src="main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="module" src="main.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="images/recipe-book.png" alt="Recipe Book Logo" class="logo">
-    <h1>Recipe Book</h1>
-  </header>
-
-  <main>
-    <form id="search-form">
-      <label for="search">Search Recipes:</label>
-      <input type="text" id="search" placeholder="Enter a keyword">
-      <button type="submit">Search</button>
-    </form>
-
-    <section id="recipes" class="recipes-container">
-
-    </section>
-  </main>
-
-  <footer>
-    <div class="social">
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/instagram_icon.svg" alt="Instagram">
-      </a>
-      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/youtube_icon.svg" alt="YouTube">
-      </a>
-      <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/pinterest_icon.svg" alt="Pinterest">
-      </a>
-    </div>
-    <small>
-      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
-        Recipe icons created by Freepik - Flaticon
-      </a>
-    </small>
-  </footer>
-  
+    <header>
+            <img class="logo" src="images/recipe-book.png" alt="recipe-book logo">
+            <h1 class="site-title">RECIPEBOOK</h1>
+    </header>
+    <main>
+        <div class="bar">
+            <form id="searchBar">
+                <input type="text" id="inputSearch" placeholder="Find a recipe">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <div class="template" id="recipe-template">
+            <!-- <img class="template-img" src="images/apple-crisp.jpg" alt="image of apple crisp">
+            <div class="template-text">
+                <h3>dessert</h3>
+                <h2>Apple Crisp</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="attribution">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        </div>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        
+    </footer>
+</body>
+</html>
